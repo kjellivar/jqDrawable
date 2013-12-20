@@ -1,21 +1,32 @@
 <html>
 <head>
     <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="code.js"></script>
+    <script src="drawable.js"></script>
+    <script src="varsomDrawableModule.js"></script>
 </head>
 
 <body>
-    <canvas width="600" height="400" style="position: relative;">
-        <strong>[Your browser can not show this example.]</strong>
-    </canvas>
-    <canvas width="600" height="400" style="position: relative;">
-        <strong>[Your browser can not show this example.]</strong>
-    </canvas>
+    <div id="superModule">
+        <canvas width="600" height="400" style="position: relative;">
+            <strong>[Your browser can not show this example.]</strong>
+        </canvas>
+        <div class="task">
+            <img src="Capture.PNG" />
+            <img src="Capture.PNG" />
+        </div>
+        <div class="task">
+            <img src="Capture.PNG" />
+            <img src="Capture.PNG" />
+        </div>
+        <div class="task">
+            <img src="Capture.PNG" />
+            <img src="Capture.PNG" />
+        </div>
+    </div>
+
     <script>
-        $("canvas").drawable({
-            color: "#ff0000",
-            lineWidth: 5
-        });
+        $("#superModule").varsomDrawableModule();
+
     </script>
 </body>
 </html>
