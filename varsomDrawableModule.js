@@ -7,8 +7,8 @@
 
         var settings = $.extend({
             // These are the defaults.
-            colors: ["#00ff00", "#ff0000"],
-            lineWidth: 2,
+            colors: ["#00ff00", "#ff0000", "#fff000"],
+            lineWidth: 5,
             canvasWidth: '600',
             canvasHeight: '400'
         }, options);
@@ -115,14 +115,8 @@
             mainDiv.find(".task img").hide();
             clearCanvas();
 
-            mainDiv.append(colorButtonsHtml);
-            mainDiv.append(clearButtonHtml);
-            mainDiv.append(solutionButtonHtml);
-            mainDiv.append(taskButtonsHtml);
+            mainDiv.append(colorButtonsHtml + clearButtonHtml + solutionButtonHtml + taskButtonsHtml);
             mainDiv.append(canvas);
-
-
-
         });
     };
 }(jQuery));
